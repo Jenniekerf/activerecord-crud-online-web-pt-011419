@@ -70,9 +70,7 @@ def can_be_found_updated_and_saved
 end
 
 def can_update_using_update_method
-  # Update movie title to "Wat, huh?"
   Movie.create(title: "Wat?")
-  #binding.pry
   Movie.update(title: "Wat, huh?")
 end
 
@@ -81,7 +79,7 @@ def can_update_multiple_items_at_once
   5.times do |i|
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
   end
-  __
+  Movie.update(title: "A movie")
 end
 
 def can_destroy_a_single_item
