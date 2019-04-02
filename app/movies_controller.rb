@@ -74,7 +74,6 @@ def can_update_using_update_method
   Movie.create(title: "Wat?")
   #binding.pry
   Movie.update(title: "Wat, huh?")
-  Movie.save
 end
 
 def can_update_multiple_items_at_once
