@@ -91,8 +91,8 @@ def can_destroy_a_single_item
 end
 
 def can_destroy_all_items_at_once
-  new_movie = 10.times do |i|
+  10.times do |i|
     Movie.create(title: "Movie_#{i}")
   end
-  new_movie.to_s.delete
+  Movie.delete_all
 end
